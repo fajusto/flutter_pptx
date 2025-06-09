@@ -33,7 +33,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <p:cNvPr id="{{new-id}}" name="Image 1" descr="Image 1"/>
                     {{/image1}}
                     <p:cNvPicPr>
-                        <a:picLocks noChangeAspect="1"/>
+                        <a:picLocks noGrp="1"/>
                     </p:cNvPicPr>
                     <p:nvPr>
                         <p:ph type="pic" idx="21"/>
@@ -48,9 +48,13 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:stretch>
                 </p:blipFill>
                 <p:spPr>
-                    <a:prstGeom prst="rect">
-                        <a:avLst/>
-                    </a:prstGeom>
+                  <a:xfrm>
+                    <a:off x="1772330" y="722295"/>
+                    <a:ext cx="6567291" cy="11020500"/>
+                  </a:xfrm>
+                  <a:prstGeom prst="rect">
+                    <a:avLst/>
+                  </a:prstGeom>
                 </p:spPr>
             </p:pic>
             <p:pic>
@@ -62,7 +66,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <p:cNvPr id="{{new-id}}" name="Image 2" descr="Image 2"/>
                     {{/image2}}
                     <p:cNvPicPr>
-                        <a:picLocks noChangeAspect="1"/>
+                        <a:picLocks noGrp="1"/>
                     </p:cNvPicPr>
                     <p:nvPr>
                         <p:ph type="pic" idx="22"/>
@@ -77,9 +81,13 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:stretch>
                 </p:blipFill>
                 <p:spPr>
-                    <a:prstGeom prst="rect">
-                        <a:avLst/>
-                    </a:prstGeom>
+                  <a:xfrm>
+                    <a:off x="9028516" y="722295"/>
+                    <a:ext cx="6567291" cy="11020500"/>
+                  </a:xfrm>
+                  <a:prstGeom prst="rect">
+                    <a:avLst/>
+                  </a:prstGeom>
                 </p:spPr>
             </p:pic>
             <p:pic>
@@ -91,7 +99,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <p:cNvPr id="{{new-id}}" name="Image 3" descr="Image 3"/>
                     {{/image3}}
                     <p:cNvPicPr>
-                        <a:picLocks noChangeAspect="1"/>
+                        <a:picLocks noGrp="1"/>
                     </p:cNvPicPr>
                     <p:nvPr>
                         <p:ph type="pic" idx="23"/>
@@ -106,9 +114,13 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:stretch>
                 </p:blipFill>
                 <p:spPr>
-                    <a:prstGeom prst="rect">
-                        <a:avLst/>
-                    </a:prstGeom>
+                  <a:xfrm>
+                    <a:off x="16284702" y="679163"/>
+                    <a:ext cx="6567291" cy="11020500"/>
+                  </a:xfrm>
+                  <a:prstGeom prst="rect">
+                    <a:avLst/>
+                  </a:prstGeom>
                 </p:spPr>
             </p:pic>
             {{>speaker-notes}}
