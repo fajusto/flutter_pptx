@@ -15,7 +15,10 @@ funding:
 dependencies:
   flutter:
     sdk: flutter
-  dart_pptx: ^0.1.3
+  dart_pptx:
+    git:
+      url: https://github.com/fajusto/flutter_pptx.git
+      path: packages/dart_pptx
   screenshot: ^3.0.0
 
 dev_dependencies:
