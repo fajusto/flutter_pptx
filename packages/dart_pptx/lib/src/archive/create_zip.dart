@@ -1,3 +1,5 @@
+import 'zip_file_encoder.dart';
+
 List<int>? createZip(Map<String, dynamic> files) {
   final encoder = ZipFileEncoder();
   final tempDir = fs.systemTempDirectory.createTempSync();
