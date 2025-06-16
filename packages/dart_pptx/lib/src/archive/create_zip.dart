@@ -17,21 +17,4 @@ List<int>? createZip(Map<String, dynamic> files) {
       file.writeAsStringSync(value);
     }
   }
-
-  // 🔄 Salvar o .pptx FINAL FORA do tempDir para evitar auto-inclusão
-  final output = fs.systemTempDirectory.createTempSync();
-  final outFile = fs.file('${output.path}/presentation.pptx');
-
-  encoder.zipDirectory(
-    tempDir,
-    filename: outFile.path,
-  );
-
-  final bytes = outFile.readAsBytesSync();
-
-  // Limpeza
-  tempDir.deleteSync(recursive: true);
-  output.deleteSync(recursive: true);
-
-  return bytes;
 }
