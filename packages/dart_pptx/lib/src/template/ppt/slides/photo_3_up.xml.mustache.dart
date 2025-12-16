@@ -24,6 +24,8 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:chExt cx="0" cy="0"/>
                 </a:xfrm>
             </p:grpSpPr>
+
+            <!-- Photo 1 -->
             <p:pic>
                 <p:nvPicPr>
                     {{#image1}}
@@ -49,14 +51,18 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:blipFill>
                 <p:spPr>
                   <a:xfrm>
-                    <a:off x="1772330" y="722295"/>
-                    <a:ext cx="6567291" cy="11020500"/>
+                    <a:off x="1772330" y="2540000"/>
+                    <a:ext cx="6200000" cy="9500000"/>
                   </a:xfrm>
-                  <a:prstGeom prst="rect">
+                  <a:prstGeom prst="roundRect">
                     <a:avLst/>
                   </a:prstGeom>
+                  <a:ln w="50800">
+                    <a:noFill/>
+                  </a:ln>
                 </p:spPr>
             </p:pic>
+            <!-- Photo 2 -->
             <p:pic>
                 <p:nvPicPr>
                     {{#image2}}
@@ -82,14 +88,18 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:blipFill>
                 <p:spPr>
                   <a:xfrm>
-                    <a:off x="9028516" y="722295"/>
-                    <a:ext cx="6567291" cy="11020500"/>
+                    <a:off x="9028516" y="2540000"/>
+                    <a:ext cx="6200000" cy="9500000"/>
                   </a:xfrm>
-                  <a:prstGeom prst="rect">
+                  <a:prstGeom prst="roundRect">
                     <a:avLst/>
                   </a:prstGeom>
+                  <a:ln w="50800">
+                    <a:noFill/>
+                  </a:ln>
                 </p:spPr>
             </p:pic>
+            <!-- Photo 3 -->
             <p:pic>
                 <p:nvPicPr>
                     {{#image3}}
@@ -115,14 +125,106 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:blipFill>
                 <p:spPr>
                   <a:xfrm>
-                    <a:off x="16284702" y="679163"/>
-                    <a:ext cx="6567291" cy="11020500"/>
+                    <a:off x="16284702" y="2540000"/>
+                    <a:ext cx="6200000" cy="9500000"/>
                   </a:xfrm>
-                  <a:prstGeom prst="rect">
+                  <a:prstGeom prst="roundRect">
                     <a:avLst/>
                   </a:prstGeom>
+                  <a:ln w="50800">
+                    <a:noFill/>
+                  </a:ln>
                 </p:spPr>
             </p:pic>
+            <!-- Title on top layer -->
+            {{#title}}
+            <p:sp>
+                <p:nvSpPr>
+                    <p:cNvPr id="{{new-id}}" name="SLIDE TITLE"/>
+                    <p:cNvSpPr txBox="1"/>
+                    <p:nvPr>
+                        <p:ph type="title"/>
+                    </p:nvPr>
+                </p:nvSpPr>
+                <p:spPr>
+                    <a:xfrm>
+                        <a:off x="3042330" y="300000"/>
+                        <a:ext cx="10800000" cy="400000"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                        <a:avLst/>
+                    </a:prstGeom>
+                </p:spPr>
+                <p:txBody>
+                    <a:bodyPr anchor="ctr"/>
+                    <a:lstStyle>
+                        <a:lvl1pPr algn="ctr"/>
+                    </a:lstStyle>
+                    {{>text-value}}
+                </p:txBody>
+            </p:sp>
+            {{/title}}
+
+            <!-- Page number as image next to the logo (top-right) -->
+            {{#imageId4}}
+            <p:pic>
+                <p:nvPicPr>
+                    <p:cNvPr id="{{new-id}}" name="Page Number" descr="Page Number Badge"/>
+                    <p:cNvPicPr>
+                        <a:picLocks noGrp="1"/>
+                    </p:cNvPicPr>
+                    <p:nvPr/>
+                </p:nvPicPr>
+                <p:blipFill>
+                    <a:blip r:embed="rId{{imageId4}}">
+                        <a:extLst/>
+                    </a:blip>
+                    <a:stretch>
+                        <a:fillRect/>
+                    </a:stretch>
+                </p:blipFill>
+                <p:spPr>
+                    <a:xfrm>
+                        <a:off x="21400000" y="504000"/>
+                        <a:ext cx="1905000" cy="635000"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="ellipse">
+                        <a:avLst/>
+                    </a:prstGeom>
+                </p:spPr>
+            </p:pic>
+            {{/imageId4}}
+
+            <!-- Logo image (top-right, below page number) -->
+            {{#imageId5}}
+            <p:pic>
+                <p:nvPicPr>
+                    <p:cNvPr id="{{new-id}}" name="Logo" descr="Company Logo"/>
+                    <p:cNvPicPr>
+                        <a:picLocks noGrp="1"/>
+                    </p:cNvPicPr>
+                    <p:nvPr/>
+                </p:nvPicPr>
+                <p:blipFill>
+                    <a:blip r:embed="rId{{imageId5}}">
+                        <a:extLst/>
+                    </a:blip>
+                    <a:stretch>
+                        <a:fillRect/>
+                    </a:stretch>
+                </p:blipFill>
+                <p:spPr>
+                    <a:xfrm>
+                        <a:off x="20200000" y="311000"/>
+                        <a:ext cx="889000" cy="889000"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                        <a:avLst/>
+                    </a:prstGeom>
+                </p:spPr>
+            </p:pic>
+            {{/imageId5}}
+
             {{>speaker-notes}}
         </p:spTree>
     </p:cSld>

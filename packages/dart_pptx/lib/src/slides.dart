@@ -34,14 +34,8 @@ export 'slides/title_only.dart';
 export 'slides/title.dart';
 
 extension SlideTemplates on PowerPoint {
-  Slide addTitleSlide({
-    TextValue? title,
-    TextValue? author,
-  }) =>
-      addSlide(SlideTitle(
-        title: title,
-        author: author,
-      ));
+  SlideTitle addTitleSlide({TextValue? title, TextValue? author}) =>
+      addSlide(SlideTitle(title: title, author: author)) as SlideTitle;
 
   Slide addTitleAndPhotoSlide({
     TextValue? title,
@@ -49,42 +43,37 @@ extension SlideTemplates on PowerPoint {
     TextValue? author,
     TextValue? subtitle,
   }) =>
-      addSlide(SlideTitleAndPhoto(
-        title: title,
-        subtitle: subtitle,
-        image: image,
-        author: author,
-      ));
+      addSlide(
+        SlideTitleAndPhoto(
+          title: title,
+          subtitle: subtitle,
+          image: image,
+          author: author,
+        ),
+      );
 
   Slide addTitleAndPhotoAltSlide({
     ImageReference? image,
     TextValue? title,
     TextValue? subtitle,
   }) {
-    return addSlide(SlideTitleAndPhotoAlt(
-      title: title,
-      subtitle: subtitle,
-      image: image,
-    ));
+    return addSlide(
+      SlideTitleAndPhotoAlt(title: title, subtitle: subtitle, image: image),
+    );
   }
 
-  Slide addTitleAndBulletsSlide({
+  SlideTitleAndBullets addTitleAndBulletsSlide({
     TextValue? title,
     List<TextValue> bullets = const [],
     TextValue? subtitle,
   }) =>
-      addSlide(SlideTitleAndBullets(
-        bullets: bullets,
-        title: title,
-        subtitle: subtitle,
-      ));
+      addSlide(
+        SlideTitleAndBullets(
+            bullets: bullets, title: title, subtitle: subtitle),
+      ) as SlideTitleAndBullets;
 
-  Slide addBulletsSlide({
-    List<TextValue> bullets = const [],
-  }) =>
-      addSlide(SlideBullets(
-        bullets: bullets,
-      ));
+  Slide addBulletsSlide({List<TextValue> bullets = const []}) =>
+      addSlide(SlideBullets(bullets: bullets));
 
   Slide addTitleBulletsAndPhotoSlide({
     TextValue? title,
@@ -92,86 +81,72 @@ extension SlideTemplates on PowerPoint {
     ImageReference? image,
     TextValue? subtitle,
   }) =>
-      addSlide(SlideTitleBulletsAndPhoto(
-        title: title,
-        subtitle: subtitle,
-        bullets: bullets,
-        image: image,
-      ));
+      addSlide(
+        SlideTitleBulletsAndPhoto(
+          title: title,
+          subtitle: subtitle,
+          bullets: bullets,
+          image: image,
+        ),
+      );
 
-  Slide addSectionSlide({
-    TextValue? section,
-  }) =>
-      addSlide(SlideSection(
-        section: section,
-      ));
+  Slide addSectionSlide({TextValue? section}) =>
+      addSlide(SlideSection(section: section));
 
-  Slide addTitleOnlySlide({
-    TextValue? title,
-    TextValue? subtitle,
-  }) =>
-      addSlide(SlideTitleOnly(
-        title: title,
-        subtitle: subtitle,
-      ));
+  Slide addTitleOnlySlide({TextValue? title, TextValue? subtitle}) =>
+      addSlide(SlideTitleOnly(title: title, subtitle: subtitle));
 
   Slide addAgendaSlide({
     TextValue? title,
     TextValue? subtitle,
     TextValue? topics,
   }) =>
-      addSlide(SlideAgenda(
-        title: title,
-        subtitle: subtitle,
-        topics: topics,
-      ));
+      addSlide(SlideAgenda(title: title, subtitle: subtitle, topics: topics));
 
-  Slide addStatementSlide({
-    TextValue? statement,
-  }) =>
-      addSlide(SlideStatement(
-        statement: statement,
-      ));
+  Slide addStatementSlide({TextValue? statement}) =>
+      addSlide(SlideStatement(statement: statement));
 
-  Slide addBigFactSlide({
-    TextValueLine? fact,
-    TextValue? information,
-  }) =>
-      addSlide(SlideBigFact(
-        fact: fact,
-        information: information,
-      ));
+  Slide addBigFactSlide({TextValueLine? fact, TextValue? information}) =>
+      addSlide(SlideBigFact(fact: fact, information: information));
 
-  Slide addQuoteSlide({
-    TextValueLine? quote,
-    TextValue? attribution,
-  }) =>
-      addSlide(SlideQuote(
-        quote: quote,
-        attribution: attribution,
-      ));
+  Slide addQuoteSlide({TextValueLine? quote, TextValue? attribution}) =>
+      addSlide(SlideQuote(quote: quote, attribution: attribution));
 
   Slide addPhoto3UpSlide({
     ImageReference? image1,
     ImageReference? image2,
     ImageReference? image3,
+    ImageReference? pageNumberImage,
+    ImageReference? logoImage,
+    TextValue? title,
+    TextValue? photoLabel1,
+    TextValue? photoLabel2,
+    TextValue? photoLabel3,
+    TextValue? photoDate1,
+    TextValue? photoDate2,
+    TextValue? photoDate3,
   }) =>
-      addSlide(SlidePhoto3Up(
-        image1: image1,
-        image2: image2,
-        image3: image3,
-      ));
+      addSlide(
+        SlidePhoto3Up(
+          image1: image1,
+          image2: image2,
+          image3: image3,
+          pageNumberImage: pageNumberImage,
+          logoImage: logoImage,
+          title: title,
+          photoLabel1: photoLabel1,
+          photoLabel2: photoLabel2,
+          photoLabel3: photoLabel3,
+          photoDate1: photoDate1,
+          photoDate2: photoDate2,
+          photoDate3: photoDate3,
+        ),
+      );
 
-  Slide addPhotoSlide({
-    ImageReference? image,
-  }) =>
-      addSlide(SlidePhoto(
-        image: image,
-      ));
+  Slide addPhotoSlide({ImageReference? image}) =>
+      addSlide(SlidePhoto(image: image));
 
   Slide addBlankSlide() {
-    return addSlide(
-      SlideBlank(),
-    );
+    return addSlide(SlideBlank());
   }
 }
