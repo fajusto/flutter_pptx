@@ -25,6 +25,8 @@ class SlideTitleAndBullets extends SlideBullets {
   ImageReference? pageNumberImage;
   ImageReference? logoImage;
 
+  bool get hasBullets => bullets.isNotEmpty;
+
   @override
   int get layoutId => 4;
 
