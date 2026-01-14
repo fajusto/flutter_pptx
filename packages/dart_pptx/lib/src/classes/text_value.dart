@@ -26,10 +26,16 @@ class TextItem {
 @JsonSerializable(createFactory: false)
 class TextValueLine {
   final List<TextItem> values;
+  final int? level;
+  final String? bulletChar;
 
   TextValueLine({
     required this.values,
+    this.level,
+    this.bulletChar,
   });
+
+  bool get hasCustomParagraphProps => level != null || bulletChar != null;
 
   Map<String, dynamic> toJson() => _$TextValueLineToJson(this);
 }
@@ -43,19 +49,20 @@ class TextValue {
   });
 
   factory TextValue.uniform(
-    String? value, {
+    Object? value, {
     bool isBold = false,
     bool isItalic = false,
     bool isUnderline = false,
     bool isStrikeThrough = false,
   }) {
+    final stringValue = value?.toString() ?? '';
     return TextValue(
       lines: [
-        if (value != null)
+        if (stringValue.isNotEmpty)
           TextValueLine(
             values: [
               TextItem(
-                value,
+                stringValue,
                 isBold: isBold,
                 isItalic: isItalic,
                 isUnderline: isUnderline,
@@ -93,8 +100,21 @@ final singleLineTemplate = Template(
 const _multiLine = r'''
 {{#lines}}
 <a:p>
-  <a:pPr/>
+  {{#hasCustomParagraphProps}}
+  <a:pPr{{#level}} lvl="{{level}}"{{/level}}>
+    {{#bulletChar}}
+    <a:buFont typeface="Courier New" pitchFamily="49" charset="0"/>
+    <a:buChar char="{{bulletChar}}"/>
+    {{/bulletChar}}
+  </a:pPr>
+  {{/hasCustomParagraphProps}}
+  {{^hasCustomParagraphProps}}
+  <a:pPr>
+    <a:buNone/>
+  </a:pPr>
+  {{/hasCustomParagraphProps}}
   {{>text-line}}
+  <a:endParaRPr/>
 </a:p>
 {{/lines}}
 ''';
@@ -115,12 +135,12 @@ const _singleLine = r'''
 {{/values}}
 ''';
 
-extension TextValueUtils on String {
+extension TextValueUtils on Object {
   TextValue toTextValue() {
     return TextValue.uniform(this);
   }
 
   TextValueLine toTextLine() {
-    return TextValueLine(values: [TextItem(this)]);
+    return TextValueLine(values: [TextItem(toString())]);
   }
 }

@@ -5,9 +5,7 @@
 const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
 <p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-    xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main"
-    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
-    xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" showMasterSp="1" showMasterPhAnim="1">
+    xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
     <p:cSld>
         {{>slide-background}}
         <p:spTree>
@@ -142,13 +140,11 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <p:nvSpPr>
                     <p:cNvPr id="{{new-id}}" name="SLIDE TITLE"/>
                     <p:cNvSpPr txBox="1"/>
-                    <p:nvPr>
-                        <p:ph type="title"/>
-                    </p:nvPr>
+                    <p:nvPr/>
                 </p:nvSpPr>
                 <p:spPr>
                     <a:xfrm>
-                        <a:off x="3042330" y="300000"/>
+                        <a:off x="1070250" y="1024200"/>
                         <a:ext cx="10800000" cy="400000"/>
                     </a:xfrm>
                     <a:prstGeom prst="rect">
@@ -156,14 +152,66 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:prstGeom>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr anchor="ctr"/>
+                    <a:bodyPr anchor="t"/>
                     <a:lstStyle>
-                        <a:lvl1pPr algn="ctr"/>
+                        <a:lvl1pPr algn="l">
+                            <a:defRPr sz="8400"/>
+                        </a:lvl1pPr>
                     </a:lstStyle>
                     {{>text-value}}
                 </p:txBody>
             </p:sp>
             {{/title}}
+
+            <!-- Description body text -->
+            {{#description}}
+            <p:sp>
+                <p:nvSpPr>
+                    <p:cNvPr id="{{new-id}}" name="Description"/>
+                    <p:cNvSpPr txBox="1">
+                        <a:spLocks noGrp="1"/>
+                    </p:cNvSpPr>
+                    <p:nvPr>
+                        <p:ph type="body" idx="1"/>
+                    </p:nvPr>
+                </p:nvSpPr>
+                <p:spPr>
+                    <a:prstGeom prst="rect">
+                        <a:avLst/>
+                    </a:prstGeom>
+                </p:spPr>
+                <p:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    {{>text-value}}
+                </p:txBody>
+            </p:sp>
+            {{/description}}
+
+            <!-- Description body text -->
+            {{#description}}
+            <p:sp>
+                <p:nvSpPr>
+                    <p:cNvPr id="{{new-id}}" name="Description"/>
+                    <p:cNvSpPr txBox="1">
+                        <a:spLocks noGrp="1"/>
+                    </p:cNvSpPr>
+                    <p:nvPr>
+                        <p:ph type="body" idx="1"/>
+                    </p:nvPr>
+                </p:nvSpPr>
+                <p:spPr>
+                    <a:prstGeom prst="rect">
+                        <a:avLst/>
+                    </a:prstGeom>
+                </p:spPr>
+                <p:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    {{>text-value}}
+                </p:txBody>
+            </p:sp>
+            {{/description}}
 
             <!-- Page number as image next to the logo (top-right) -->
             {{#imageId4}}
@@ -201,7 +249,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <p:nvPicPr>
                     <p:cNvPr id="{{new-id}}" name="Logo" descr="Company Logo"/>
                     <p:cNvPicPr>
-                        <a:picLocks noGrp="1"/>
+                        <a:picLocks noGrp="1" noChangeAspect="1"/>
                     </p:cNvPicPr>
                     <p:nvPr/>
                 </p:nvPicPr>
@@ -231,5 +279,5 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
     <p:clrMapOvr>
         <a:masterClrMapping/>
     </p:clrMapOvr>
-    <p:transition xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" spd="med" advClick="1"/>
+    <p:transition spd="med"/>
 </p:sld>''';

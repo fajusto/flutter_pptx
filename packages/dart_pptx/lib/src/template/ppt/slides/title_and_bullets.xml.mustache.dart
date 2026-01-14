@@ -130,7 +130,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <p:nvPicPr>
                     <p:cNvPr id="{{new-id}}" name="Logo" descr="Company Logo"/>
                     <p:cNvPicPr>
-                        <a:picLocks noGrp="1"/>
+                        <a:picLocks noGrp="1" noChangeAspect="1"/>
                     </p:cNvPicPr>
                     <p:nvPr/>
                 </p:nvPicPr>

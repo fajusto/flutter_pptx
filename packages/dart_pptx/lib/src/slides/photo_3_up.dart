@@ -22,6 +22,7 @@ class SlidePhoto3Up extends Slide {
     this.photoDate1,
     this.photoDate2,
     this.photoDate3,
+    this.description,
     super.speakerNotes,
     super.slideNumber,
     this.title,
@@ -31,6 +32,7 @@ class SlidePhoto3Up extends Slide {
   ImageReference? pageNumberImage;
   ImageReference? logoImage;
   TextValue? title;
+  TextValue? description;
   TextValue? photoLabel1, photoLabel2, photoLabel3;
   TextValue? photoDate1, photoDate2, photoDate3;
 

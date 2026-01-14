@@ -446,7 +446,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -472,7 +472,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -498,7 +498,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -524,7 +524,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -550,7 +550,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -576,7 +576,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -602,7 +602,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -628,7 +628,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -654,7 +654,7 @@
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
