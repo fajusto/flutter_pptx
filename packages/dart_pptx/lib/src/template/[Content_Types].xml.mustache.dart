@@ -1,7 +1,7 @@
 /// This file is generated, do not edit!
 /// See `bin/copy.dart` for more information.
 
-/// Path: ./template/[Content_Types].xml.mustache
+/// Path: ./template\[Content_Types].xml.mustache
 const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
     <Default Extension="xml" ContentType="application/xml"/>

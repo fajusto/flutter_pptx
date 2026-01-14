@@ -1,7 +1,7 @@
 /// This file is generated, do not edit!
 /// See `bin/copy.dart` for more information.
 
-/// Path: ./template/ppt/slideMasters/slideMaster1.xml
+/// Path: ./template\ppt\slideMasters\slideMaster1.xml
 const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
 <p:sldMaster xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
@@ -450,7 +450,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -476,7 +476,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -502,7 +502,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -528,7 +528,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -554,7 +554,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -580,7 +580,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -606,7 +606,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -632,7 +632,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>
@@ -658,7 +658,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buClrTx/>
                 <a:buSzPct val="150000"/>
                 <a:buFontTx/>
-                <a:buChar char="•"/>
+                <a:buNone/>
                 <a:tabLst/>
                 <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
                     <a:solidFill>

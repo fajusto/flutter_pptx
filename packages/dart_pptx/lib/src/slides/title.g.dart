@@ -23,6 +23,7 @@ Map<String, dynamic> _$SlideTitleToJson(SlideTitle instance) =>
       'title': instance.title?.toJson(),
       'author': instance.author?.toJson(),
       'pageNumberImage': instance.pageNumberImage?.toJson(),
+      'logoImage': instance.logoImage?.toJson(),
       'layoutId': instance.layoutId,
       'source': instance.source,
     };

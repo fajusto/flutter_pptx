@@ -36,7 +36,7 @@ const _background = r'''
         {{#image}}
         <a:blipFill rotWithShape="1">
             <a:blip r:embed="rId{{localRId}}"/>
-            <a:srcRect l="0" t="0" r="0" b="0"/>
+            <a:srcRect/>
             <a:stretch>
                 <a:fillRect/>
             </a:stretch>

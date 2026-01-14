@@ -1,7 +1,7 @@
 /// This file is generated, do not edit!
 /// See `bin/copy.dart` for more information.
 
-/// Path: ./template/ppt/slideLayouts/slideLayout6.xml
+/// Path: ./template\ppt\slideLayouts\slideLayout6.xml
 const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
 <p:sldLayout xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"

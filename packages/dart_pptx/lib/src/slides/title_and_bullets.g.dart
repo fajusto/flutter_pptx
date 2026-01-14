@@ -25,6 +25,7 @@ Map<String, dynamic> _$SlideTitleAndBulletsToJson(
       'title': instance.title?.toJson(),
       'subtitle': instance.subtitle?.toJson(),
       'pageNumberImage': instance.pageNumberImage?.toJson(),
+      'logoImage': instance.logoImage?.toJson(),
       'layoutId': instance.layoutId,
       'source': instance.source,
     };

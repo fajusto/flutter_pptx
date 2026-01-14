@@ -1,9 +1,8 @@
 /// This file is generated, do not edit!
 /// See `bin/copy.dart` for more information.
 
-/// Path: ./template/docProps/core.xml.mustache
-const String template =
-    r'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+/// Path: ./template\docProps\core.xml.mustache
+const String template = r'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:dcterms="http://purl.org/dc/terms/"
