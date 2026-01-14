@@ -1,6 +1,6 @@
 /// This file is generated, do not edit!
 /// See `bin/copy.dart` for more information.
-
+///
 /// Path: ./template\ppt\slides\title_and_bullets.xml.mustache
 const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
 <p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
@@ -97,69 +97,6 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     {{/subtitle}}
                 </p:txBody>
             </p:sp>
-<<<<<<< HEAD
-=======
-
-            <!-- Page number as image next to the logo (top-right) -->
-            {{#imageId4}}
-            <p:pic>
-                <p:nvPicPr>
-                    <p:cNvPr id="{{new-id}}" name="Page Number" descr="Page Number Badge"/>
-                    <p:cNvPicPr>
-                        <a:picLocks noGrp="1"/>
-                    </p:cNvPicPr>
-                    <p:nvPr/>
-                </p:nvPicPr>
-                <p:blipFill>
-                    <a:blip r:embed="rId{{imageId4}}">
-                        <a:extLst/>
-                    </a:blip>
-                    <a:stretch>
-                        <a:fillRect/>
-                    </a:stretch>
-                </p:blipFill>
-                <p:spPr>
-                    <a:xfrm>
-                        <a:off x="21400000" y="504000"/>
-                        <a:ext cx="1905000" cy="635000"/>
-                    </a:xfrm>
-                    <a:prstGeom prst="ellipse">
-                        <a:avLst/>
-                    </a:prstGeom>
-                </p:spPr>
-            </p:pic>
-            {{/imageId4}}
-
-            <!-- Logo image (top-right, below page number) -->
-            {{#imageId5}}
-            <p:pic>
-                <p:nvPicPr>
-                    <p:cNvPr id="{{new-id}}" name="Logo" descr="Company Logo"/>
-                    <p:cNvPicPr>
-                        <a:picLocks noGrp="1" noChangeAspect="1"/>
-                    </p:cNvPicPr>
-                    <p:nvPr/>
-                </p:nvPicPr>
-                <p:blipFill>
-                    <a:blip r:embed="rId{{imageId5}}">
-                        <a:extLst/>
-                    </a:blip>
-                    <a:stretch>
-                        <a:fillRect/>
-                    </a:stretch>
-                </p:blipFill>
-                <p:spPr>
-                    <a:xfrm>
-                        <a:off x="20200000" y="311000"/>
-                        <a:ext cx="889000" cy="889000"/>
-                    </a:xfrm>
-                    <a:prstGeom prst="rect">
-                        <a:avLst/>
-                    </a:prstGeom>
-                </p:spPr>
-            </p:pic>
-            {{/imageId5}}
->>>>>>> b174b2bc5d3c8c08ac0da99d526146eded274d6d
             {{>speaker-notes}}
         </p:spTree>
     </p:cSld>

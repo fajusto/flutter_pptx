@@ -25,11 +25,16 @@ class SlideTitleAndBullets extends SlideBullets {
   ImageReference? pageNumberImage;
   ImageReference? logoImage;
 
+  bool get hasBullets => bullets.isNotEmpty;
+
   @override
   int get layoutId => 4;
 
   @override
-  Map<String, dynamic> toJson() => _$SlideTitleAndBulletsToJson(this);
+  Map<String, dynamic> toJson() => {
+        ..._$SlideTitleAndBulletsToJson(this),
+        'hasBullets': hasBullets,
+      };
 
   @override
   Map<int, ImageReference?> get imageRefs => {
