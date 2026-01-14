@@ -45,6 +45,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     {{/title}}
                 </p:txBody>
             </p:sp>
+            {{#hasBullets}}
             <p:sp>
                 <p:nvSpPr>
                     <p:cNvPr id="{{new-id}}" name="SLIDE BULLET A…"/>
@@ -60,16 +61,13 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:spPr>
                 <p:txBody>
                     <a:bodyPr/>
-                    <a:lstStyle>
-                        <a:lvl1pPr>
-                            <a:buNone/>
-                        </a:lvl1pPr>
-                    </a:lstStyle>
+                    <a:lstStyle/>
                     {{#bullets}}
                     {{>text-value}}
                     {{/bullets}}
                 </p:txBody>
             </p:sp>
+            {{/hasBullets}}
             <p:sp>
                 <p:nvSpPr>
                     <p:cNvPr id="{{new-id}}" name="Slide Subtitle"/>
