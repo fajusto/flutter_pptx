@@ -34,14 +34,20 @@ export 'slides/title_only.dart';
 export 'slides/title.dart';
 
 extension SlideTemplates on PowerPoint {
+<<<<<<< Updated upstream
   SlideTitle addTitleSlide({TextValue? title, TextValue? author}) =>
       addSlide(SlideTitle(title: title, author: author)) as SlideTitle;
+=======
+  Slide addTitleSlide({TextValue? title, TextValue? author}) =>
+      addSlide(SlideTitle(title: title, author: author));
+>>>>>>> Stashed changes
 
   Slide addTitleAndPhotoSlide({
     TextValue? title,
     ImageReference? image,
     TextValue? author,
     TextValue? subtitle,
+<<<<<<< Updated upstream
   }) =>
       addSlide(
         SlideTitleAndPhoto(
@@ -51,6 +57,16 @@ extension SlideTemplates on PowerPoint {
           author: author,
         ),
       );
+=======
+  }) => addSlide(
+    SlideTitleAndPhoto(
+      title: title,
+      subtitle: subtitle,
+      image: image,
+      author: author,
+    ),
+  );
+>>>>>>> Stashed changes
 
   Slide addTitleAndPhotoAltSlide({
     ImageReference? image,
@@ -66,11 +82,17 @@ extension SlideTemplates on PowerPoint {
     TextValue? title,
     List<TextValue> bullets = const [],
     TextValue? subtitle,
+<<<<<<< Updated upstream
   }) =>
       addSlide(
         SlideTitleAndBullets(
             bullets: bullets, title: title, subtitle: subtitle),
       ) as SlideTitleAndBullets;
+=======
+  }) => addSlide(
+    SlideTitleAndBullets(bullets: bullets, title: title, subtitle: subtitle),
+  );
+>>>>>>> Stashed changes
 
   Slide addBulletsSlide({List<TextValue> bullets = const []}) =>
       addSlide(SlideBullets(bullets: bullets));
@@ -80,6 +102,7 @@ extension SlideTemplates on PowerPoint {
     List<TextValue> bullets = const [],
     ImageReference? image,
     TextValue? subtitle,
+<<<<<<< Updated upstream
   }) =>
       addSlide(
         SlideTitleBulletsAndPhoto(
@@ -89,6 +112,16 @@ extension SlideTemplates on PowerPoint {
           image: image,
         ),
       );
+=======
+  }) => addSlide(
+    SlideTitleBulletsAndPhoto(
+      title: title,
+      subtitle: subtitle,
+      bullets: bullets,
+      image: image,
+    ),
+  );
+>>>>>>> Stashed changes
 
   Slide addSectionSlide({TextValue? section}) =>
       addSlide(SlideSection(section: section));
@@ -100,8 +133,12 @@ extension SlideTemplates on PowerPoint {
     TextValue? title,
     TextValue? subtitle,
     TextValue? topics,
+<<<<<<< Updated upstream
   }) =>
       addSlide(SlideAgenda(title: title, subtitle: subtitle, topics: topics));
+=======
+  }) => addSlide(SlideAgenda(title: title, subtitle: subtitle, topics: topics));
+>>>>>>> Stashed changes
 
   Slide addStatementSlide({TextValue? statement}) =>
       addSlide(SlideStatement(statement: statement));
@@ -119,13 +156,17 @@ extension SlideTemplates on PowerPoint {
     ImageReference? pageNumberImage,
     ImageReference? logoImage,
     TextValue? title,
+<<<<<<< Updated upstream
     TextValue? description,
+=======
+>>>>>>> Stashed changes
     TextValue? photoLabel1,
     TextValue? photoLabel2,
     TextValue? photoLabel3,
     TextValue? photoDate1,
     TextValue? photoDate2,
     TextValue? photoDate3,
+<<<<<<< Updated upstream
   }) =>
       addSlide(
         SlidePhoto3Up(
@@ -144,6 +185,24 @@ extension SlideTemplates on PowerPoint {
           photoDate3: photoDate3,
         ),
       );
+=======
+  }) => addSlide(
+    SlidePhoto3Up(
+      image1: image1,
+      image2: image2,
+      image3: image3,
+      pageNumberImage: pageNumberImage,
+      logoImage: logoImage,
+      title: title,
+      photoLabel1: photoLabel1,
+      photoLabel2: photoLabel2,
+      photoLabel3: photoLabel3,
+      photoDate1: photoDate1,
+      photoDate2: photoDate2,
+      photoDate3: photoDate3,
+    ),
+  );
+>>>>>>> Stashed changes
 
   Slide addPhotoSlide({ImageReference? image}) =>
       addSlide(SlidePhoto(image: image));
