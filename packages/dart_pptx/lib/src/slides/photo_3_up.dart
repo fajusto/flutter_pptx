@@ -22,10 +22,7 @@ class SlidePhoto3Up extends Slide {
     this.photoDate1,
     this.photoDate2,
     this.photoDate3,
-<<<<<<< Updated upstream
     this.description,
-=======
->>>>>>> Stashed changes
     super.speakerNotes,
     super.slideNumber,
     this.title,
@@ -35,10 +32,7 @@ class SlidePhoto3Up extends Slide {
   ImageReference? pageNumberImage;
   ImageReference? logoImage;
   TextValue? title;
-<<<<<<< Updated upstream
   TextValue? description;
-=======
->>>>>>> Stashed changes
   TextValue? photoLabel1, photoLabel2, photoLabel3;
   TextValue? photoDate1, photoDate2, photoDate3;
 
@@ -47,15 +41,6 @@ class SlidePhoto3Up extends Slide {
 
   @override
   Map<int, ImageReference?> get imageRefs => {
-<<<<<<< Updated upstream
-        ...super.imageRefs,
-        1: image1,
-        2: image2,
-        3: image3,
-        4: pageNumberImage,
-        5: logoImage,
-      };
-=======
     ...super.imageRefs,
     1: image1,
     2: image2,
@@ -63,7 +48,6 @@ class SlidePhoto3Up extends Slide {
     4: pageNumberImage,
     5: logoImage,
   };
->>>>>>> Stashed changes
 
   @override
   Map<String, dynamic> toJson() => _$SlidePhoto3UpToJson(this);

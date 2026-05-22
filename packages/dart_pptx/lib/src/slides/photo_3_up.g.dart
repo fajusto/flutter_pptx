@@ -31,18 +31,8 @@ Map<String, dynamic> _$SlidePhoto3UpToJson(SlidePhoto3Up instance) =>
       'image2': instance.image2?.toJson(),
       'image3': instance.image3?.toJson(),
       'pageNumberImage': instance.pageNumberImage?.toJson(),
-<<<<<<< Updated upstream
       'logoImage': instance.logoImage?.toJson(),
-      'title': instance.title?.toJson(),
       'description': instance.description?.toJson(),
-      'photoLabel1': instance.photoLabel1?.toJson(),
-      'photoLabel2': instance.photoLabel2?.toJson(),
-      'photoLabel3': instance.photoLabel3?.toJson(),
-      'photoDate1': instance.photoDate1?.toJson(),
-      'photoDate2': instance.photoDate2?.toJson(),
-      'photoDate3': instance.photoDate3?.toJson(),
-=======
->>>>>>> Stashed changes
       'layoutId': instance.layoutId,
       'source': instance.source,
     };

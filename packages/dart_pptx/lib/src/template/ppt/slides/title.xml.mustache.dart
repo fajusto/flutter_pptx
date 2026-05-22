@@ -70,8 +70,6 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     {{/title}}
                 </p:txBody>
             </p:sp>
-<<<<<<< HEAD
-=======
 
             <!-- Page number as image next to the logo (top-right) -->
             {{#imageId4}}
@@ -132,7 +130,6 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:spPr>
             </p:pic>
             {{/imageId5}}
->>>>>>> b174b2bc5d3c8c08ac0da99d526146eded274d6d
             {{>speaker-notes}}
         </p:spTree>
     </p:cSld>
