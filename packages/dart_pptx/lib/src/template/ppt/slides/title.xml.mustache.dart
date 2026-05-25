@@ -65,7 +65,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <p:txBody>
                     <a:bodyPr/>
                     <a:lstStyle/>
-                    {{#title}}}
+                    {{#title}}
                     {{>text-value}}
                     {{/title}}
                 </p:txBody>
