@@ -148,7 +148,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:nvSpPr>
                 <p:spPr>
                     <a:xfrm>
-                        <a:off x="3328080" y="776250"/>
+                        <a:off x="1219200" y="1157250"/>
                         <a:ext cx="10800000" cy="1270000"/>
                     </a:xfrm>
                     <a:prstGeom prst="rect">
@@ -158,7 +158,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <p:txBody>
                     <a:bodyPr anchor="t"/>
                     <a:lstStyle>
-                        <a:lvl1pPr algn="ctr"/>
+                        <a:lvl1pPr algn="l"/>
                     </a:lstStyle>
                     {{>text-value}}
                 </p:txBody>
