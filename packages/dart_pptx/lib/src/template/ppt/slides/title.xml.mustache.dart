@@ -91,7 +91,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:blipFill>
                 <p:spPr>
                     <a:xfrm>
-                        <a:off x="21400000" y="504000"/>
+                        <a:off x="22279000" y="12881000"/>
                         <a:ext cx="1905000" cy="635000"/>
                     </a:xfrm>
                     <a:prstGeom prst="ellipse">
@@ -121,7 +121,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:blipFill>
                 <p:spPr>
                     <a:xfrm>
-                        <a:off x="20200000" y="311000"/>
+                        <a:off x="23395000" y="100000"/>
                         <a:ext cx="889000" cy="889000"/>
                     </a:xfrm>
                     <a:prstGeom prst="rect">
